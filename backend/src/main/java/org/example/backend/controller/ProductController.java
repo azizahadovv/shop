@@ -2,7 +2,7 @@ package org.example.backend.controller;
 
 
 import org.example.backend.Db;
-import org.example.backend.entity.User;
+import org.example.backend.entity.Product;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,18 +10,16 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/v1/user")
+@RequestMapping("/v1/products")
 
-public class UserController {
+public class ProductController {
+
+//    All users
 
     @GetMapping
-    public List<User> getUsers() {
-        return Db.users;
+    public List<Product> getProducts() {
+        return Db.products;
     }
-
-
-
-
 
 
 

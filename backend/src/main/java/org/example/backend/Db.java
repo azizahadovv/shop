@@ -20,10 +20,10 @@ public class Db {
 
 
         users.addAll(List.of(user1, user2, user3, user4));
-        Category category1 = new Category(UUID.randomUUID(), "Elektronika", user1.getId());
-        Category category2 = new Category(UUID.randomUUID(), "Bulunamadi", UUID.randomUUID());
-        Category category3 = new Category(UUID.randomUUID(), "Kalan Bulunamadi", UUID.randomUUID());
-        Category category4 = new Category(UUID.randomUUID(), "Kalan Bulunamadi", UUID.randomUUID());
+        Category category1 = new Category(UUID.randomUUID(), "Elektronika");
+        Category category2 = new Category(UUID.randomUUID(), "Bulunamadi");
+        Category category3 = new Category(UUID.randomUUID(), "Kalan Bulunamadi");
+        Category category4 = new Category(UUID.randomUUID(), "Kalan Bulunamadi");
         categories.addAll(List.of(category1, category2, category3, category4));
 
         Product product1 = new Product(UUID.randomUUID(), "Noutbook", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic", category1.getId(), user1.getId());
