@@ -1,0 +1,1 @@
+export {default as logoReact} from './react.svg'
