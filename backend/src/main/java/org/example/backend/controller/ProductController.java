@@ -25,7 +25,7 @@ public class ProductController {
         return Db.products;
     }
 
-//    { Id } only for you
+//    { ID } only for you
 
     @GetMapping("/{userId}")
     public List<Product> getUserProducts(@PathVariable UUID userId) {
