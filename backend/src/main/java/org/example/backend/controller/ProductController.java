@@ -48,6 +48,13 @@ public class ProductController {
     }
 
 
+    @DeleteMapping("/{id}")
+    public String deleteInId(@PathVariable UUID id) {
+        Db.products.removeIf(product -> product.getId().equals(id));
+        return "Muvaffaqiyatli o'chirildi";
+    }
+
+
     @DeleteMapping
     public ResponseEntity<String> deleteProduct(@RequestBody CategoryDeleteDto categoryDeleteDto) {
         // O‘chirilmoqchi bo‘lgan productni topish
@@ -85,7 +92,6 @@ public class ProductController {
         return ResponseEntity.status(HttpStatus.NOT_FOUND)
                 .body("Product not found");
     }
-
 
 
 }

@@ -13,8 +13,9 @@ import java.util.UUID;
 public class Product {
     private UUID id;
     private String productName;
+    private Integer price;
     private String description;
     private UUID categoryId;
-    private  UUID userId;
+    private UUID userId;
 
 }
